@@ -1,12 +1,14 @@
+"use client";
 import React from "react";
 import MenuItem from "./MenuItem";
 import { AiFillHome } from "react-icons/ai";
 import { BiSolidInfoCircle } from "react-icons/bi";
 import Link from "next/link";
+import DarkModeSwitch from "./DarkModeSwitch";
 
 export default function Header() {
   return (
-    <div className="flex justify-between mx-2 my-6 max-w-6xl sm:mx-auto items-center">
+    <div className="flex justify-between mx-2 py-6 max-w-6xl sm:mx-auto items-center">
       {/* Left side */}
       <div className="flex">
         <MenuItem title="HOME" address="/" icon={AiFillHome} />
@@ -14,7 +16,11 @@ export default function Header() {
       </div>
 
       {/* Right side */}
-      <div className="">
+      <div className="flex items-center space-x-5">
+        {/* Dark Mode */}
+        <DarkModeSwitch />
+
+        {/* Logo */}
         <Link href="/">
           <h2 className="text-2xl">
             <span className="font-bold bg-amber-500 py-1 px-2 rounded-lg mr-1">
