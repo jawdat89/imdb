@@ -9,7 +9,7 @@ export default function Loading() {
         height={150}
         src="spinner.svg"
         alt="Loading..."
-        className="h-100"
+        className=""
       />
     </div>
   );

@@ -25,7 +25,7 @@ export default async function Home({ searchParams }: Props) {
   const results = data.results;
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex min-h-screen flex-col items-evenly">
       <div className="">
         <Results results={results} />
       </div>

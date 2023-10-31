@@ -1,4 +1,6 @@
 type TheMovieDBResult = {
+  release_date: string;
+  title: string;
   original_title: string;
   adult: boolean;
   backdrop_path: string | null;
