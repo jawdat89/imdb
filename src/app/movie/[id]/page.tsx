@@ -78,15 +78,17 @@ export default async function MoviePage({ params }: Props) {
             <span className="font-semibold mr-1">Revenue:</span>
             {movie.revenue} USD
           </p>
-          <p className="text-lg mb-3">
-            <span className="font-semibold mr-1">Homepage:</span>
-            <Link
-              className="text-blue-800 dark:text-blue-300 underline "
-              href={movie.homepage}
-            >
-              {movie.homepage}
-            </Link>
-          </p>
+          {movie.homepage && (
+            <p className="text-lg mb-3">
+              <span className="font-semibold mr-1">Homepage:</span>
+              <Link
+                className="text-blue-800 dark:text-blue-300 underline "
+                href={movie.homepage}
+              >
+                {movie.homepage}
+              </Link>
+            </p>
+          )}
         </div>
       </div>
     </div>

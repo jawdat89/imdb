@@ -51,3 +51,10 @@ type TheMovieDBMovieDetails = {
   vote_average: number;
   vote_count: number;
 };
+
+type TheMovieDBSearchResult = {
+  page: number;
+  results:TheMovieDBResult[];
+  total_pages: number;
+  total_results: number;
+};
